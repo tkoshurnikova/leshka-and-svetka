@@ -5,26 +5,109 @@ body {
 
 .hero {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     width: 100%;
-    height: 100vh;
+    height: 805px;
+    margin-top: 20px;
     background-image:
+            url('./images/hero/2stars@2x.png'),
+            url('./images/hero/3stars@2x.png'),
+            url('./images/hero/arrow@2x.png'),
             url('./images/hero/lemon@2x.png'),
             url('./images/hero/flower@2x.png'),
             url('./images/hero/bg-1@2x.png');
     background-size:
-            200px,
-            300px,
-            100%;
+            80px,
+            74px,
+            120px,
+            290px,
+            425px,
+            100% 100%;
     background-repeat: no-repeat;
     background-position:
-            100% 100%,
-            0 0,
+            30% 34%,
+            71% 63%,
+            calc(50% - 252px) 80%,
+            100% 104%,
+            0 -18px,
             center 0;
 }
 
 .hero__photo {
     width: 400px;
     height: 400px;
-    margin-top: 100px
+    margin-top: 32px
+}
+
+.hero__text--1 {
+    margin-top: 86px;
+    margin-left: 118px
+}
+
+.hero__text--2 {
+    margin-top: 32px;
+    margin-right: 82px
+}
+
+.hero__text--3 {
+    margin-top: 8px;
+    margin-right: 80px
+}
+
+@media (max-width: 1000px) {
+    .hero {
+        height: auto;
+        margin-top: 2px;
+        background-image:
+                url('./images/hero/2stars@2x.png'),
+                url('./images/hero/3stars@2x.png'),
+                url('./images/hero/arrow-mobile@2x.png'),
+                url('./images/hero/lemon@2x.png'),
+                url('./images/hero/flower@2x.png'),
+                url('./images/hero/bg-1-mobile@2x.png');
+        background-size:
+                36px,
+                46px,
+                56px,
+                100px,
+                170px,
+                100% 100%;
+        background-position:
+                19% 31%,
+                87% 75%,
+                calc(50% - 132px) 75%,
+                100% 104%,
+                0 -18px,
+                center 0;
+    }
+
+    .hero__photo {
+        width: 220px;
+        height: 220px;
+        margin-top: 28px;
+    }
+
+    .hero__text--1 {
+        width: 156px;
+        height: 50px;
+        margin-top: 60px;
+        margin-left: 144px;
+    }
+
+    .hero__text--2 {
+        width: 260px;
+        height: 34px;
+        margin-top: 30px;
+        margin-left: 78px;
+    }
+
+    .hero__text--3 {
+        width: 224px;
+        height: 26px;
+        margin-top: 4px;
+        margin-bottom: 82px;
+        margin-left: 38px;
+    }
 }
