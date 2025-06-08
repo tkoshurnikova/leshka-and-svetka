@@ -3,7 +3,22 @@ body {
     background-color: #f8cacd;
 }
 
-.hero {
+.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.bg--mobile {
+    display: none;
+}
+
+.block {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -11,13 +26,18 @@ body {
     width: 100%;
     height: 805px;
     margin-top: 20px;
+    background-repeat: no-repeat;
+}
+
+/* HERO */
+
+.hero {
     background-image:
             url('./images/hero/2stars@2x.png'),
             url('./images/hero/3stars@2x.png'),
             url('./images/hero/arrow@2x.png'),
             url('./images/hero/lemon@2x.png'),
-            url('./images/hero/flower@2x.png'),
-            url('./images/hero/bg-1@2x.png');
+            url('./images/hero/flower@2x.png');
     background-size:
             80px,
             74px,
@@ -25,12 +45,11 @@ body {
             290px,
             425px,
             100% 100%;
-    background-repeat: no-repeat;
     background-position:
             30% 34%,
             71% 63%,
             calc(50% - 252px) 80%,
-            100% 104%,
+            100% 103%,
             0 -18px,
             center 0;
 }
@@ -56,17 +75,102 @@ body {
     margin-right: 80px
 }
 
+/* MAP */
+
+.map {
+    background-image:
+            url('./images/map/leaves.png'),
+            url('./images/map/leaves-2.png'),
+            url('./images/map/side-text.svg'),
+            url('./images/map/arrow.svg');
+    background-size:
+            480px,
+            490px,
+            40px,
+            88px;
+    background-position:
+            100% -118px,
+            0 187%,
+            calc(50% - 292px) 42%,
+            calc(50% - 268px) 56%;
+}
+
+.map__text--1 {
+    margin-top: 94px;
+}
+
+.map__text--2 {
+    margin-top: 70px;
+}
+
+.map__link {
+    width: 425px;
+    height: 295px;
+    margin-top: 34px;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.map__address {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-top: 40px;
+}
+
+.map__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 280px;
+    height: 51px;
+    border: none;
+    border-radius: 12px;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.4s;
+
+    svg {
+        margin-top: 6px;
+    }
+}
+
+.map__button:hover {
+    background-color: #F1F4E4;
+}
+
+.map__button:active {
+    background-color: #E1E8C1;
+}
+
 @media (max-width: 1000px) {
-    .hero {
+    .bg {
+        display: none;
+    }
+
+    .bg--mobile {
+        display: block;
+    }
+
+    .block {
         height: auto;
+    }
+
+    /* HERO */
+
+    .hero {
         margin-top: 2px;
+        padding-bottom: 26px;
         background-image:
                 url('./images/hero/2stars@2x.png'),
                 url('./images/hero/3stars@2x.png'),
                 url('./images/hero/arrow-mobile@2x.png'),
                 url('./images/hero/lemon@2x.png'),
                 url('./images/hero/flower@2x.png'),
-                url('./images/hero/bg-1-mobile@2x.png');
+                url('./images/hero/bg-mobile.svg');
         background-size:
                 36px,
                 46px,
@@ -75,12 +179,16 @@ body {
                 170px,
                 100% 100%;
         background-position:
-                19% 31%,
-                87% 75%,
-                calc(50% - 132px) 75%,
-                100% 104%,
-                0 -18px,
+                19% 29%,
+                87% 62%,
+                calc(50% - 132px) 71%,
+                104% 98%,
+                0 -2px,
                 center 0;
+
+        .bg--mobile {
+            height: 95%;
+        }
     }
 
     .hero__photo {
@@ -109,5 +217,59 @@ body {
         margin-top: 4px;
         margin-bottom: 82px;
         margin-left: 38px;
+    }
+
+    /* MAP */
+
+    .map {
+        margin-top: 0;
+        background-image:
+                url('./images/map/leaves-2.png'),
+                url('./images/map/side-text.svg'),
+                url('./images/map/arrow-mobile.svg');
+        background-size:
+                150px,
+                30px,
+                38px;
+        background-position:
+                -24px 13%,
+                calc(50% + 146px) 44%,
+                calc(50% + 142px) 51%;
+    }
+
+    .map__text--1 {
+        height: 34px;
+        margin-top: 58px;
+    }
+
+    .map__text--2 {
+        height: 50px;
+        margin-top: 26px;
+    }
+
+    .map__text--3 {
+        height: 46px;
+    }
+
+    .map__link {
+        width: 65%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .map__address {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .map__button {
+        width: 200px;
+        height: 40px;
+        margin-bottom: 56px;
+
+        svg {
+            height: 14px;
+        }
     }
 }
