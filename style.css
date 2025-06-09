@@ -9,6 +9,10 @@ body {
             0 4380px;
     background-size: 100%, 100%;
     background-repeat: no-repeat;
+    font-family: "Playpen Sans", cursive;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
 }
 
 main {
@@ -205,6 +209,7 @@ main {
 .form__wrapper {
     display: flex;
     width: 87%;
+    max-width: 1250px;
 }
 
 .form__legend {
@@ -221,6 +226,7 @@ main {
 }
 
 .form__title {
+    flex-shrink: 0;
     margin-top: 102px;
 }
 
@@ -233,23 +239,107 @@ main {
 }
 
 .form__input {
-    width: 572px;
+    width: 540px;
     height: 28px;
     padding: 16px;
     border-radius: 12px;
     border: none;
     color: #000000;
+    font-family: "Playpen Sans", cursive;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 22px;
 }
 
 .form__input::placeholder {
     color: #848484;
 }
 
+.form__radio {
+    display: flex;
+    gap: 12px;
+
+    input {
+        display: none;
+    }
+
+    label {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 280px;
+        height: 60px;
+        border: 3px solid #C2CDEC;
+        border-radius: 12px;
+        background-color: #C2CDEC;
+        cursor: pointer;
+        transition: background-color 0.4s, border-color 0.4s;
+    }
+
+    label:hover {
+        background-color: #DFE5F8;
+    }
+
+    input:checked + label {
+        border: 3px inset #6188F4;
+    }
+
+    #meat + label,
+    #transfer_no + label {
+        border-color: #EACDC8;
+        background-color: #EACDC8;
+    }
+
+    #meat + label:hover,
+    #transfer_no + label:hover {
+        border-color: #F9E4E1;
+        background-color: #F9E4E1;
+    }
+
+    #meat:checked + label,
+    #transfer_no:checked + label {
+        border-color: #EC8171;
+    }
+
+    #transfer_no + label svg {
+        margin-top: 6px;
+    }
+
+    #veg + label {
+        border-color: #EAE0C8;
+        background-color: #EAE0C8;
+    }
+
+    #veg + label:hover {
+        border-color: #F4EDDB;
+        background-color: #F4EDDB;
+    }
+
+    #veg:checked + label {
+        border-color: #CEB57C;
+    }
+
+    #transfer_yes + label {
+        border-color: #E4EAC8;
+        background-color: #E4EAC8;
+    }
+
+    #transfer_yes + label:hover {
+        border-color: #F1F4E4;
+        background-color: #F1F4E4;
+    }
+
+    #transfer_yesЖchecked + label {
+        border-color: #9FA772;
+    }
+}
+
 .form__button {
     width: 400px;
     height: 60px;
-    margin-top: 420px;
-    margin-right: 76px;
+    margin-top: 96px;
+    margin-right: 140px;
     margin-left: auto;
     border: none;
     border-radius: 12px;
@@ -271,13 +361,12 @@ main {
     background-color: #297942;
 }
 
-
 /* INVITE */
 
 .invite {
     height: 638px;
     margin-top: 86px;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
     background-image:
             url('./images/invite/side-text.svg'),
             url('./images/invite/arrow.svg');
