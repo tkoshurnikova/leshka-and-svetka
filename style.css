@@ -150,8 +150,10 @@ body {
 
 .timetable {
     width: 100%;
+    max-width: 1440px;
     height: auto;
     aspect-ratio: 1362 / 625;
+    margin: 0 auto;
     background-image: url('./images/timetable/bg.png');
     background-size: 100%;
 }
@@ -160,8 +162,10 @@ body {
 
 .dress-code {
     width: 100%;
+    max-width: 1440px;
     height: auto;
     aspect-ratio: 1433 / 1439;
+    margin: 0 auto;
     background-image: url('./images/dress-code/bg.png');
     background-size: 100%;
 }
@@ -170,8 +174,10 @@ body {
 
 .gifts {
     width: 100%;
+    max-width: 1440px;
     height: auto;
     aspect-ratio: 1458 / 820;
+    margin: 0 auto;
     background-image: url('./images/gifts/bg.png');
     background-size: 100%;
 }
