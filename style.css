@@ -316,6 +316,7 @@ main {
         background-color: #F4EDDB;
     }
 
+
     #veg:checked + label {
         border-color: #CEB57C;
     }
