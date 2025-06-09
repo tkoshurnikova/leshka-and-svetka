@@ -146,6 +146,36 @@ body {
     background-color: #E1E8C1;
 }
 
+/* TIMETABLE */
+
+.timetable {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1362 / 625;
+    background-image: url('./images/timetable/bg.png');
+    background-size: 100%;
+}
+
+/* DRESS CODE */
+
+.dress-code {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1433 / 1439;
+    background-image: url('./images/dress-code/bg.png');
+    background-size: 100%;
+}
+
+/* GIFTS */
+
+.gifts {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1458 / 820;
+    background-image: url('./images/gifts/bg.png');
+    background-size: 100%;
+}
+
 @media (max-width: 1000px) {
     .bg {
         display: none;
@@ -271,5 +301,26 @@ body {
         svg {
             height: 14px;
         }
+    }
+
+    /* TIMETABLE */
+
+    .timetable {
+        aspect-ratio: 419 / 434;
+        background-image: url('./images/timetable/bg-mobile.png');
+    }
+
+    /* DRESS CODE */
+
+    .dress-code {
+        aspect-ratio: 408 / 1065;
+        background-image: url('./images/dress-code/bg-mobile.png');
+    }
+
+    /* GIFTS */
+
+    .gifts {
+        aspect-ratio: 365 / 522;
+        background-image: url('./images/gifts/bg-mobile.png');
     }
 }
