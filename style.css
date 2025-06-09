@@ -1,6 +1,14 @@
 body {
     margin: 0;
     background-color: #f8cacd;
+    background-image:
+            url('./images/bg.svg'),
+            url('./images/bg-2.svg');
+    background-position:
+            0 690px,
+            0 4380px;
+    background-size: 100%, 100%;
+    background-repeat: no-repeat;
 }
 
 .bg {
@@ -25,7 +33,7 @@ body {
     align-items: center;
     width: 100%;
     height: 805px;
-    margin-top: 20px;
+    margin-top: 30px;
     background-repeat: no-repeat;
 }
 
@@ -78,6 +86,7 @@ body {
 /* MAP */
 
 .map {
+    margin-top: 44px;
     background-image:
             url('./images/map/leaves.png'),
             url('./images/map/leaves-2.png'),
@@ -153,7 +162,7 @@ body {
     max-width: 1440px;
     height: auto;
     aspect-ratio: 1362 / 625;
-    margin: 0 auto;
+    margin: 24px auto 0;
     background-image: url('./images/timetable/bg.png');
     background-size: 100%;
 }
@@ -165,7 +174,7 @@ body {
     max-width: 1440px;
     height: auto;
     aspect-ratio: 1433 / 1439;
-    margin: 0 auto;
+    margin: 14px auto 0;
     background-image: url('./images/dress-code/bg.png');
     background-size: 100%;
 }
@@ -177,12 +186,78 @@ body {
     max-width: 1440px;
     height: auto;
     aspect-ratio: 1458 / 820;
-    margin: 0 auto;
+    margin: 40px auto 0;
     background-image: url('./images/gifts/bg.png');
     background-size: 100%;
 }
 
+/* FORM */
+
+.form {
+    height: 1290px;
+    margin-top: 40px;
+}
+
+/* INVITE */
+
+.invite {
+    height: 638px;
+    margin-top: 86px;
+    margin-bottom: 80px;
+    background-image:
+            url('./images/invite/side-text.svg'),
+            url('./images/invite/arrow.svg');
+    background-size:
+            200px,
+            260px;
+    background-position:
+            calc(50% - 440px) 43%,
+            calc(50% - 334px) 64%;
+}
+
+.invite__qr {
+    margin-top: 80px;
+    margin-bottom: 58px;
+}
+
+.invite__link {
+    margin-top: 26px;
+
+    svg {
+        transition: opacity 0.4s;
+    }
+}
+
+.invite__link:hover svg {
+    opacity: 0.7;
+}
+
+.invite__text--1-mobile {
+    display: none;
+}
+
+/* FOOTER */
+
+.footer {
+    width: 100%;
+    max-width: 1440px;
+    height: auto;
+    aspect-ratio: 1440 / 330;
+    margin: 0 auto;
+    background-image: url('./images/footer/bg.png');
+    background-size: 100%;
+}
+
 @media (max-width: 1000px) {
+    body {
+        background-image:
+                url('./images/bg-mobile.svg'),
+                url('./images/bg-2-mobile.svg');
+        background-position:
+                0 330px,
+                0 2380px;
+    }
+
     .bg {
         display: none;
     }
@@ -258,7 +333,7 @@ body {
     /* MAP */
 
     .map {
-        margin-top: 0;
+        margin-top: -14px;
         background-image:
                 url('./images/map/leaves-2.png'),
                 url('./images/map/side-text.svg'),
@@ -270,7 +345,7 @@ body {
         background-position:
                 -24px 13%,
                 calc(50% + 146px) 44%,
-                calc(50% + 142px) 51%;
+                calc(50% + 148px) 51%;
     }
 
     .map__text--1 {
@@ -312,6 +387,7 @@ body {
     /* TIMETABLE */
 
     .timetable {
+        margin-top: 60px;
         aspect-ratio: 419 / 434;
         background-image: url('./images/timetable/bg-mobile.png');
     }
@@ -319,6 +395,7 @@ body {
     /* DRESS CODE */
 
     .dress-code {
+        margin-top: 28px;
         aspect-ratio: 408 / 1065;
         background-image: url('./images/dress-code/bg-mobile.png');
     }
@@ -328,5 +405,62 @@ body {
     .gifts {
         aspect-ratio: 365 / 522;
         background-image: url('./images/gifts/bg-mobile.png');
+    }
+
+    /* FORM */
+
+    .form {
+        height: 1080px;
+    }
+
+    /* INVITE */
+
+    .invite {
+        height: auto;
+        margin-top: 46px;
+        margin-bottom: 78px;
+        background-image:
+                url('./images/invite/side-text.svg'),
+                url('./images/invite/arrow-mobile.svg');
+        background-size:
+                130px,
+                78px;
+        background-position:
+                50% 73%,
+                calc(50% - 120px) 59%;
+    }
+
+    .invite__text--1 {
+        display: none;
+    }
+
+    .invite__text--1-mobile {
+        display: initial;
+    }
+
+    .invite__text--2 {
+        height: 14px;
+    }
+
+    .invite__qr {
+        width: 207px;
+        height: 205px;
+        margin-top: 32px;
+        margin-bottom: 94px;
+    }
+
+    .invite__link {
+        margin-top: 16px;
+
+        svg {
+            height: 24px;
+        }
+    }
+
+    /* FOOTER */
+
+    .footer {
+        aspect-ratio: 750 / 322;
+        background-image: url('./images/footer/bg-mobile.png');
     }
 }
