@@ -11,6 +11,10 @@ body {
     background-repeat: no-repeat;
 }
 
+main {
+    overflow: hidden;
+}
+
 .bg {
     position: absolute;
     top: 0;
@@ -240,12 +244,19 @@ body {
 
 .footer {
     width: 100%;
-    max-width: 1440px;
     height: auto;
     aspect-ratio: 1440 / 330;
     margin: 0 auto;
-    background-image: url('./images/footer/bg.png');
-    background-size: 100%;
+    background-image: url('./images/footer/bg.png'), url('./images/footer/bg-big.png');
+    background-size: 1440px, 100%;
+    background-position: 50% 0, 0 0;
+}
+
+@media (min-width: 1441px) {
+    .footer {
+        height: 330px;
+        aspect-ratio: unset;
+    }
 }
 
 @media (max-width: 1000px) {
@@ -453,6 +464,7 @@ body {
         margin-top: 16px;
 
         svg {
+            width: 100%;
             height: 24px;
         }
     }
@@ -460,7 +472,9 @@ body {
     /* FOOTER */
 
     .footer {
+        margin-bottom: 0;
         aspect-ratio: 750 / 322;
         background-image: url('./images/footer/bg-mobile.png');
+        background-size: 100%;
     }
 }
