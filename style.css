@@ -282,7 +282,7 @@ main {
     }
 
     input:checked + label {
-        border: 3px inset #6188F4;
+        border: 3px solid #6188F4;
     }
 
     #meat + label,
@@ -331,7 +331,7 @@ main {
         background-color: #F1F4E4;
     }
 
-    #transfer_yesЖchecked + label {
+    #transfer_yes:checked + label {
         border-color: #9FA772;
     }
 }
