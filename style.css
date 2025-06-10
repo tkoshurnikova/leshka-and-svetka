@@ -45,6 +45,10 @@ main {
     background-repeat: no-repeat;
 }
 
+._mobile {
+    display: none;
+}
+
 /* HERO */
 
 .hero {
@@ -350,7 +354,7 @@ main {
     transition: background-color 0.4s;
 
     svg {
-        margin-top: 6px;
+        margin-top: 8px;
     }
 }
 
@@ -432,6 +436,14 @@ main {
 
     .block {
         height: auto;
+    }
+
+    ._desktop {
+        display: none;
+    }
+
+    ._mobile {
+        display: initial;
     }
 
     /* HERO */
@@ -567,6 +579,7 @@ main {
     /* GIFTS */
 
     .gifts {
+        margin-top: 4px;
         aspect-ratio: 365 / 522;
         background-image: url('./images/gifts/bg-mobile.png');
     }
@@ -575,6 +588,85 @@ main {
 
     .form {
         height: 1080px;
+        margin-top: 10px;
+    }
+
+    .form__title {
+        align-self: flex-start;
+        width: 262px;
+        height: 45px;
+        margin-top: 64px;
+        padding-left: 46px;
+    }
+
+    .form__wrapper {
+        width: 84%;
+        padding-left: 10px;
+    }
+
+    .form__legend {
+        gap: 18px;
+        margin-top: 40px;
+        padding-left: 10px;
+    }
+
+    .form__side-text:last-child {
+        height: 20px;
+        width: 146px;
+    }
+
+    .form__wrapper {
+        flex-direction: column-reverse;
+    }
+
+    .form__form {
+        margin-top: 48px;
+        padding: 0;
+    }
+
+    .form__question {
+        gap: 8px;
+        margin-top: 0;
+        margin-bottom: 36px;
+
+        svg {
+            width: min-content;
+            height: 27px;
+        }
+    }
+
+    .form__input {
+        width: 284px;
+        height: 12px;
+        padding: 14px;
+        border-radius: 8px;
+        font-size: 13px;
+    }
+
+    .form__radio {
+        gap: 6px;
+
+        label {
+            flex-grow: 1;
+            width: 20%;
+            height: 34px;
+            border-radius: 8px;
+        }
+
+        svg {
+            height: 14px;
+        }
+    }
+
+    .form__button {
+        width: 220px;
+        height: 40px;
+        margin-top: 14px;
+        margin-right: auto;
+
+        svg {
+            height: 14px;
+        }
     }
 
     /* INVITE */
