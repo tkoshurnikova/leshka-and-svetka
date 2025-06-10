@@ -17,140 +17,148 @@
     <body>
         <main>
             <div class="block hero">
-                <img class="bg" src="./images/hero/bg.svg">
-                <img class="bg bg--mobile" src="./images/hero/bg-mobile.svg">
+                <div class="block__wrapper">
+                    <img class="bg" src="./images/hero/bg.svg">
+                    <img class="bg bg--mobile" src="./images/hero/bg-mobile.svg">
 
-                <img class="hero__text--1" src="./images/hero/text-1.svg" width="199" height="65">
-                <img class="hero__photo" src="./images/hero/photo.png" srcset="./images/hero/photo@2x.png 2x" alt="супер фото" width="400" height="400">
-                <img class="hero__text--2" src="./images/hero/text-2.svg" width="331" height="43">
-                <img class="hero__text--3" src="./images/hero/text-3.svg" width="283" height="33">
-            </div>
-
-            <div class="block map">
-                <img class="bg" src="./images/map/bg.svg">
-                <img class="bg bg--mobile" src="./images/map/bg-mobile.svg">
-
-                <img class="map__text--1" src="./images/map/text-1.svg" width="284" height="44">
-                <img class="map__text--2" src="./images/map/text-2.svg" width="264" height="67">
-
-                <a class="map__link" href="https://yandex.ru/maps/-/CHSqNCnT" target="_blank">
-                    <img class="map__image" src="./images/map/map.png" srcset="./images/map/map@2x.png 2x">
-                </a>
-
-                <div class="map__address">
-                    <img class="map__text--3" src="./images/map/text-3.svg" width="374" height="56">
-
-                    <button class="map__button" onclick="copyToClipboard('Московская область, Богородский городской округ, деревня Пешково, Ферма Пешково')">
-                        <img class="map__text--3" src="./images/map/button-text.svg" width="192" height="20">
-                    </button>
+                    <img class="hero__text--1" src="./images/hero/text-1.svg" width="199" height="65">
+                    <img class="hero__photo" src="./images/hero/photo.png" srcset="./images/hero/photo@2x.png 2x" alt="супер фото" width="400" height="400">
+                    <img class="hero__text--2" src="./images/hero/text-2.svg" width="331" height="43">
+                    <img class="hero__text--3" src="./images/hero/text-3.svg" width="283" height="33">
                 </div>
             </div>
 
-            <div class="block timetable">
+            <div class="block map">
+                <div class="block__wrapper">
+                    <img class="bg" src="./images/map/bg.svg">
+                    <img class="bg bg--mobile" src="./images/map/bg-mobile.svg">
+
+                    <img class="map__text--1" src="./images/map/text-1.svg" width="284" height="44">
+                    <img class="map__text--2" src="./images/map/text-2.svg" width="264" height="67">
+
+                    <a class="map__link" href="https://yandex.ru/maps/-/CHSqNCnT" target="_blank">
+                        <img class="map__image" src="./images/map/map.png" srcset="./images/map/map@2x.png 2x">
+                    </a>
+
+                    <div class="map__address">
+                        <img class="map__text--3" src="./images/map/text-3.svg" width="374" height="56">
+
+                        <button class="map__button" onclick="copyToClipboard('Московская область, Богородский городской округ, деревня Пешково, Ферма Пешково')">
+                            <img class="map__text--3" src="./images/map/button-text.svg" width="192" height="20">
+                        </button>
+                    </div>
+                </div>
             </div>
 
-            <div class="block dress-code">
+            <div class="block timetable block__wrapper">
             </div>
 
-            <div class="block gifts">
+            <div class="block dress-code block__wrapper">
+            </div>
+
+            <div class="block gifts block__wrapper">
             </div>
 
             <div class="block form">
-                <img class="bg" src="./images/form/bg.svg">
-                <img class="bg bg--mobile" src="./images/form/bg-mobile.svg">
+                <div class="block__wrapper">
+                    <img class="bg" src="./images/form/bg.svg">
+                    <img class="bg bg--mobile" src="./images/form/bg-mobile.svg">
 
-                <img class="form__title" src="./images/form/title.svg" width="378" height="66">
+                    <img class="form__title" src="./images/form/title.svg" width="378" height="66">
 
-                <div class="form__wrapper">
-                    <form class="form__form" action="https://formspree.io/f/mpwrprew" method="POST">
-                        <!-- 1 -->
-                        <label class="form__question">
-                            <img src="./images/form/q1.svg" width="486" height="46">
-                            <input class="form__input" type="text" name="Имя" required placeholder="напишите здесь">
-                        </label>
+                    <div class="form__wrapper">
+                        <form class="form__form" action="https://formspree.io/f/mpwrprew" method="POST">
+                            <!-- 1 -->
+                            <label class="form__question">
+                                <img src="./images/form/q1.svg" width="486" height="46">
+                                <input class="form__input" type="text" name="Имя" required placeholder="напишите здесь">
+                            </label>
 
-                        <!-- 2 -->
-                        <label class="form__question">
-                            <img src="./images/form/q2.svg" width="441" height="46">
-                            <input class="form__input" type="text" name="Аллергия" placeholder="если да, укажите здесь">
-                        </label>
+                            <!-- 2 -->
+                            <label class="form__question">
+                                <img src="./images/form/q2.svg" width="441" height="46">
+                                <input class="form__input" type="text" name="Аллергия" placeholder="если да, укажите здесь">
+                            </label>
 
-                        <!-- 3 -->
-                        <div class="form__question">
-                            <img class="_desktop" src="./images/form/q3.svg" width="832" height="46">
-                            <img class="_mobile" src="./images/form/q3-mobile.svg" width="272" height="47">
+                            <!-- 3 -->
+                            <div class="form__question">
+                                <img class="_desktop" src="./images/form/q3.svg" width="832" height="46">
+                                <img class="_mobile" src="./images/form/q3-mobile.svg" width="272" height="47">
 
-                            <div class="form__radio">
-                                <input type="radio" name="Блюдо" value="рыба" id="fish" required />
-                                <label for="fish">
-                                    <img src="./images/form/dish-1.svg" width="87" height="31">
-                                </label>
+                                <div class="form__radio">
+                                    <input type="radio" name="Блюдо" value="рыба" id="fish" required />
+                                    <label for="fish">
+                                        из рыбы
+                                    </label>
 
-                                <input type="radio" name="Блюдо" value="мясо" id="meat" required />
-                                <label for="meat">
-                                    <img src="./images/form/dish-2.svg" width="83" height="14">
-                                </label>
+                                    <input type="radio" name="Блюдо" value="мясо" id="meat" required />
+                                    <label for="meat">
+                                        из мяса
+                                    </label>
 
-                                <input type="radio" name="Блюдо" value="овощи" id="veg" required />
-                                <label for="veg">
-                                    <img src="./images/form/dish-3.svg" width="107" height="24">
-                                </label>
+                                    <input type="radio" name="Блюдо" value="овощи" id="veg" required />
+                                    <label for="veg">
+                                        из овощей
+                                    </label>
+                                </div>
                             </div>
-                        </div>
 
-                        <!-- 4 -->
-                        <div class="form__question">
-                            <img class="_desktop" src="./images/form/q4.svg" width="901" height="46">
-                            <img class="_mobile" src="./images/form/q4-mobile.svg" width="264" height="46">
+                            <!-- 4 -->
+                            <div class="form__question">
+                                <img class="_desktop" src="./images/form/q4.svg" width="901" height="46">
+                                <img class="_mobile" src="./images/form/q4-mobile.svg" width="264" height="46">
 
-                            <div class="form__radio">
-                                <input type="radio" name="Трансфер" value="да" id="transfer_yes" required />
-                                <label for="transfer_yes">
-                                    <img src="./images/form/transfer-1.svg" width="126" height="31">
-                                </label>
+                                <div class="form__radio">
+                                    <input type="radio" name="Трансфер" value="да" id="transfer_yes" required />
+                                    <label for="transfer_yes">
+                                        мне нужен!
+                                    </label>
 
-                                <input type="radio" name="Трансфер" value="нет" id="transfer_no" required />
-                                <label for="transfer_no">
-                                    <img src="./images/form/transfer-2.svg" width="101" height="23">
-                                </label>
+                                    <input type="radio" name="Трансфер" value="нет" id="transfer_no" required />
+                                    <label for="transfer_no">
+                                        не нужен
+                                    </label>
+                                </div>
                             </div>
+
+                            <!-- 5 -->
+                            <label class="form__question">
+                                <img class="_desktop" src="./images/form/q5.svg" width="580" height="88">
+                                <img class="_mobile" src="./images/form/q5-mobile.svg" width="250" height="68">
+
+                                <input class="form__input" type="text" name="Особенности питания" placeholder="если да, укажите здесь">
+                            </label>
+
+                            <button class="form__button" type="submit">
+                                <img src="./images/form/button-text.svg" width="108" height="22">
+                            </button>
+                        </form>
+
+                        <div class="form__legend">
+                            <img class="form__side-text _desktop" src="./images/form/side-text-1.svg" width="263" height="88">
+                            <img class="form__side-text _mobile" src="./images/form/side-text-1-mobile.svg" width="236" height="31">
+
+                            <img class="form__side-text _desktop" src="./images/form/side-text-2.svg" width="234" height="63">
+                            <img class="form__side-text _mobile" src="./images/form/side-text-2-mobile.svg" width="229" height="17">
+
+                            <img class="form__side-text" src="./images/form/side-text-3.svg" width="289" height="32">
                         </div>
-
-                        <!-- 5 -->
-                        <label class="form__question">
-                            <img class="_desktop" src="./images/form/q5.svg" width="580" height="88">
-                            <img class="_mobile" src="./images/form/q5-mobile.svg" width="250" height="68">
-
-                            <input class="form__input" type="text" name="Особенности питания" placeholder="если да, укажите здесь">
-                        </label>
-
-                        <button class="form__button" type="submit">
-                            <img src="./images/form/button-text.svg" width="108" height="22">
-                        </button>
-                    </form>
-
-                    <div class="form__legend">
-                        <img class="form__side-text _desktop" src="./images/form/side-text-1.svg" width="263" height="88">
-                        <img class="form__side-text _mobile" src="./images/form/side-text-1-mobile.svg" width="236" height="31">
-
-                        <img class="form__side-text _desktop" src="./images/form/side-text-2.svg" width="234" height="63">
-                        <img class="form__side-text _mobile" src="./images/form/side-text-2-mobile.svg" width="229" height="17">
-
-                        <img class="form__side-text" src="./images/form/side-text-3.svg" width="289" height="32">
                     </div>
                 </div>
             </div>
 
             <div class="block invite">
-                <img class="invite__text--1 _desktop" src="./images/invite/text-1.svg" width="770" height="70">
-                <img class="invite__text--1 _mobile" src="./images/invite/text-1-mobile.svg" width="259" height="64">
+                <div class="block__wrapper">
+                    <img class="invite__text--1 _desktop" src="./images/invite/text-1.svg" width="770" height="70">
+                    <img class="invite__text--1 _mobile" src="./images/invite/text-1-mobile.svg" width="259" height="64">
 
-                <img class="invite__qr" src="./images/invite/qr@2x.png" alt="qr код" width="330" height="326">
-                <img class="invite__text--2" src="./images/invite/text-2.svg" width="324" height="23">
+                    <img class="invite__qr" src="./images/invite/qr@2x.png" alt="qr код" width="330" height="326">
+                    <img class="invite__text--2" src="./images/invite/text-2.svg" width="324" height="23">
 
-                <a class="invite__link" href="https://t.me/+E7mp88-YtCA3M2Zi" target="_blank">
-                    <img src="./images/invite/link.svg" width="532" height="39">
-                </a>
+                    <a class="invite__link" href="https://t.me/+E7mp88-YtCA3M2Zi" target="_blank">
+                        <img src="./images/invite/link.svg" width="532" height="39">
+                    </a>
+                </div>
             </div>
 
             <div class="block footer">
