@@ -42,6 +42,10 @@ async function onFormSubmit(e) {
     } catch (err) {
         console.log('Произошла следующая ошибка:', err);
         showError();
+    } finally {
+        setTimeout(() => {
+            closeModal();
+        }, 5000);
     }
 }
 
