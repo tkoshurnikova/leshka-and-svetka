@@ -149,6 +149,7 @@ main {
 }
 
 .map__button {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -163,6 +164,23 @@ main {
     img {
         margin-top: 6px;
     }
+}
+
+.map__informer {
+    position: absolute;
+    padding: 8px;
+    top: -4px;
+    left: 50%;
+    border-radius: 8px;
+    background-color: #fff;
+    font-family: "Playpen Sans", cursive;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.4s;
+    transform: translate(-50%, -100%);
 }
 
 .map__button:hover {
@@ -549,7 +567,7 @@ main {
     }
 
     .map__link {
-        width: 65%;
+        width: 240px;
         height: auto;
         margin-top: 20px;
     }
@@ -571,14 +589,17 @@ main {
         }
     }
 
+    .map__informer {
+        font-size: 12px;
+    }
+
     /* TIMETABLE */
 
     .timetable {
         width: calc(100% + 44px);
         margin: 60px auto -46px;
         aspect-ratio: 419 / 434;
-        background-image:
-                image-set(url('./images/timetable/bg-mobile.png') 1x, url('./images/timetable/bg-mobile@2x.png') 2x);
+        background-image: url('./images/timetable/bg-mobile@2x.png');
         transform: translateX(-22px);
     }
 
@@ -589,7 +610,7 @@ main {
         margin-top: 28px;
         margin-bottom: -132px;
         aspect-ratio: 408 / 1065;
-        background-image: image-set(url('./images/dress-code/bg-mobile.png') 1x, url('./images/dress-code/bg-mobile@2x.png') 2x);
+        background-image: url('./images/dress-code/bg-mobile@2x.png');
     }
 
     /* GIFTS */
@@ -597,7 +618,7 @@ main {
     .gifts {
         margin-top: 4px;
         aspect-ratio: 365 / 522;
-        background-image: image-set(url('./images/gifts/bg-mobile.png') 1x, url('./images/gifts/bg-mobile@2x.png') 2x);
+        background-image: url('./images/gifts/bg-mobile@2x.png');
     }
 
     /* FORM */
