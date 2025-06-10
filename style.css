@@ -53,11 +53,11 @@ main {
 
 .hero {
     background-image:
-            url('./images/hero/2stars@2x.png'),
-            url('./images/hero/3stars@2x.png'),
-            url('./images/hero/arrow@2x.png'),
-            url('./images/hero/lemon@2x.png'),
-            url('./images/hero/flower@2x.png');
+            image-set(url('./images/hero/2stars.png') 1x, url('./images/hero/2stars@2x.png') 2x),
+            image-set(url('./images/hero/3stars.png') 1x, url('./images/hero/3stars@2x.png') 2x),
+            image-set(url('./images/hero/arrow.png') 1x, url('./images/hero/arrow@2x.png') 2x),
+            image-set(url('./images/hero/lemon.png') 1x, url('./images/hero/lemon@2x.png') 2x),
+            image-set(url('./images/hero/flower.png') 1x, url('./images/hero/flower@2x.png') 2x);
     background-size:
             80px,
             74px,
@@ -100,8 +100,8 @@ main {
 .map {
     margin-top: 44px;
     background-image:
-            url('./images/map/leaves.png'),
-            url('./images/map/leaves-2.png'),
+            image-set(url('./images/map/leaves.png') 1x, url('./images/map/leaves@2x.png') 2x),
+            image-set(url('./images/map/leaves-2.png') 1x, url('./images/map/leaves-2@2x.png') 2x),
             url('./images/map/side-text.svg'),
             url('./images/map/arrow.svg');
     background-size:
@@ -175,7 +175,7 @@ main {
     height: auto;
     aspect-ratio: 1362 / 625;
     margin: 24px auto 0;
-    background-image: url('./images/timetable/bg.png');
+    background-image: image-set(url('./images/timetable/bg.png') 1x, url('./images/timetable/bg@2x.png') 2x);
     background-size: 100%;
 }
 
@@ -187,7 +187,7 @@ main {
     height: auto;
     aspect-ratio: 1433 / 1439;
     margin: 14px auto 0;
-    background-image: url('./images/dress-code/bg.png');
+    background-image: image-set(url('./images/dress-code/bg.png') 1x, url('./images/dress-code/bg@2x.png') 2x);
     background-size: 100%;
 }
 
@@ -199,7 +199,7 @@ main {
     height: auto;
     aspect-ratio: 1458 / 820;
     margin: 40px auto 0;
-    background-image: url('./images/gifts/bg.png');
+    background-image: image-set(url('./images/gifts/bg.png') 1x, url('./images/gifts/bg@2x.png') 2x);
     background-size: 100%;
 }
 
@@ -407,7 +407,9 @@ main {
     height: auto;
     aspect-ratio: 1440 / 330;
     margin: 0 auto;
-    background-image: url('./images/footer/bg.png'), url('./images/footer/bg-big.png');
+    background-image:
+            image-set(url('./images/footer/bg.png') 1x, url('./images/footer/bg@2x.png') 2x),
+            image-set(url('./images/footer/bg-big.png') 1x, url('./images/footer/bg-big@2x.png') 2x);
     background-size: 1440px, 100%;
     background-position: 50% 0, 0 0;
 }
@@ -448,11 +450,11 @@ main {
         margin-top: 2px;
         padding-bottom: 26px;
         background-image:
-                url('./images/hero/2stars@2x.png'),
-                url('./images/hero/3stars@2x.png'),
-                url('./images/hero/arrow-mobile@2x.png'),
-                url('./images/hero/lemon@2x.png'),
-                url('./images/hero/flower@2x.png'),
+                image-set(url('./images/hero/2stars.png') 1x, url('./images/hero/2stars@2x.png') 2x),
+                image-set(url('./images/hero/3stars.png') 1x, url('./images/hero/3stars@2x.png') 2x),
+                image-set(url('./images/hero/arrow-mobile.png') 1x, url('./images/hero/arrow-mobile@2x.png') 2x),
+                image-set(url('./images/hero/lemon.png') 1x, url('./images/hero/lemon@2x.png') 2x),
+                image-set(url('./images/hero/flower.png') 1x, url('./images/hero/flower@2x.png') 2x),
                 url('./images/hero/bg-mobile.svg');
         background-size:
                 36px,
@@ -507,7 +509,7 @@ main {
     .map {
         margin-top: -14px;
         background-image:
-                url('./images/map/leaves-2.png'),
+                image-set(url('./images/map/leaves-2.png') 1x, url('./images/map/leaves-2@2x.png') 2x),
                 url('./images/map/side-text.svg'),
                 url('./images/map/arrow-mobile.svg');
         background-size:
@@ -565,7 +567,7 @@ main {
     .timetable {
         margin-top: 60px;
         aspect-ratio: 419 / 434;
-        background-image: url('./images/timetable/bg-mobile.png');
+        background-image: image-set(url('./images/timetable/bg-mobile.png') 1x, url('./images/timetable/bg-mobile@2x.png') 2x);
     }
 
     /* DRESS CODE */
@@ -573,7 +575,7 @@ main {
     .dress-code {
         margin-top: 28px;
         aspect-ratio: 408 / 1065;
-        background-image: url('./images/dress-code/bg-mobile.png');
+        background-image: image-set(url('./images/dress-code/bg-mobile.png') 1x, url('./images/dress-code/bg-mobile@2x.png') 2x);
     }
 
     /* GIFTS */
@@ -581,7 +583,7 @@ main {
     .gifts {
         margin-top: 4px;
         aspect-ratio: 365 / 522;
-        background-image: url('./images/gifts/bg-mobile.png');
+        background-image: image-set(url('./images/gifts/bg-mobile.png') 1x, url('./images/gifts/bg-mobile@2x.png') 2x);
     }
 
     /* FORM */
@@ -722,7 +724,7 @@ main {
     .footer {
         margin-bottom: 0;
         aspect-ratio: 750 / 322;
-        background-image: url('./images/footer/bg-mobile.png');
+        background-image: image-set(url('./images/footer/bg-mobile.png') 1x, url('./images/footer/bg-mobile@2x.png') 2x);
         background-size: 100%;
     }
 }
