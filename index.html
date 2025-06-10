@@ -69,7 +69,7 @@
                     <img class="form__title" src="./images/form/title.svg" width="378" height="66">
 
                     <div class="form__wrapper">
-                        <form class="form__form" action="https://formspree.io/f/mpwrprew" method="POST">
+                        <form class="form__form js-form">
                             <!-- 1 -->
                             <label class="form__question">
                                 <img src="./images/form/q1.svg" width="486" height="46">
@@ -131,7 +131,7 @@
                                 <input class="form__input" type="text" name="Особенности питания" placeholder="если да, укажите здесь">
                             </label>
 
-                            <button class="form__button" type="submit">
+                            <button class="form__button" type="button" onclick="onFormSubmit()">
                                 <img src="./images/form/button-text.svg" width="108" height="22">
                             </button>
                         </form>
@@ -166,6 +166,13 @@
             <div class="block footer">
             </div>
         </main>
+
+        <div class="overlay"></div>
+
+        <div class="modal js-modal">
+            <img class="modal__success-message" src="./images/modal/success-message.svg">
+            <img class="modal__error-message" src="./images/modal/error-message.svg">
+        </div>
 
         <script src="js/script.js"></script>
     </body>
