@@ -22,7 +22,9 @@ const form = document.querySelector('.js-form');
 const modal = document.querySelector('.js-modal');
 const overlay = document.querySelector('.overlay');
 
-async function onFormSubmit(e) {
+form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
     try {
         const formData = new FormData(form);
 
@@ -47,7 +49,7 @@ async function onFormSubmit(e) {
             closeModal();
         }, 5000);
     }
-}
+});
 
 overlay.addEventListener('click', closeModal);
 
