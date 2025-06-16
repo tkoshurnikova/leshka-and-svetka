@@ -284,84 +284,83 @@ main {
     color: #848484;
 }
 
+.form__radio-input {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.form__radio-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 280px;
+    height: 58px;
+    padding-bottom: 2px;
+    border: 3px solid #C2CDEC;
+    border-radius: 12px;
+    background-color: #C2CDEC;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.4s, border-color 0.4s;
+}
+
+.form__radio-label:hover {
+    background-color: #DFE5F8;
+}
+
 .form__radio {
     position: relative;
     display: flex;
     gap: 12px;
 
-    input {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        z-index: -1;
-    }
-
-    label {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 280px;
-        height: 58px;
-        padding-bottom: 2px;
-        border: 3px solid #C2CDEC;
-        border-radius: 12px;
-        background-color: #C2CDEC;
-        font-size: 20px;
-        cursor: pointer;
-        transition: background-color 0.4s, border-color 0.4s;
-    }
-
-    label:hover {
-        background-color: #DFE5F8;
-    }
-
-    input:checked + label {
+    .form__radio-input:checked + .form__radio-label {
         border: 3px solid #6188F4;
     }
 
-    #meat + label,
-    #transfer_no + label {
+    #meat + .form__radio-label,
+    #transfer_no + .form__radio-label {
         border-color: #EACDC8;
         background-color: #EACDC8;
     }
 
-    #meat + label:hover,
-    #transfer_no + label:hover {
+    #meat + .form__radio-label:hover,
+    #transfer_no + .form__radio-label:hover {
         border-color: #F9E4E1;
         background-color: #F9E4E1;
     }
 
-    #meat:checked + label,
-    #transfer_no:checked + label {
+    #meat:checked + .form__radio-label,
+    #transfer_no:checked + .form__radio-label {
         border-color: #EC8171;
     }
 
-    #veg + label {
+    #veg + .form__radio-label {
         border-color: #EAE0C8;
         background-color: #EAE0C8;
     }
 
-    #veg + label:hover {
+    #veg + .form__radio-label:hover {
         border-color: #F4EDDB;
         background-color: #F4EDDB;
     }
 
-
-    #veg:checked + label {
+    #veg:checked + .form__radio-label {
         border-color: #CEB57C;
     }
 
-    #transfer_yes + label {
+    #transfer_yes + .form__radio-label {
         border-color: #E4EAC8;
         background-color: #E4EAC8;
     }
 
-    #transfer_yes + label:hover {
+    #transfer_yes + .form__radio-label:hover {
         border-color: #F1F4E4;
         background-color: #F1F4E4;
     }
 
-    #transfer_yes:checked + label {
+    #transfer_yes:checked + .form__radio-label {
         border-color: #9FA772;
     }
 }
@@ -672,7 +671,7 @@ main {
         margin-bottom: 56px;
 
         img {
-            width: auto;
+            width: 134px;
             height: 14px;
         }
     }
@@ -775,16 +774,16 @@ main {
         font-size: 13px;
     }
 
+    .form__radio-label {
+        flex-grow: 1;
+        width: 20%;
+        height: 32px;
+        border-radius: 8px;
+        font-size: 12px;
+    }
+
     .form__radio {
         gap: 6px;
-
-        label {
-            flex-grow: 1;
-            width: 20%;
-            height: 32px;
-            border-radius: 8px;
-            font-size: 12px;
-        }
 
         img:not(._mobile) {
             width: auto;
